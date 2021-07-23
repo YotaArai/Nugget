@@ -1,6 +1,4 @@
-import * as THREE from "three";
+import App from './app';
+import './index.scss'
 
-window.addEventListener("DOMContentLoaded", () => {
-
-  console.log("Hello World");
-});
+new App();
