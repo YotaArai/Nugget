@@ -17,7 +17,7 @@ canvas {
 
   font-size: 18px;
   line-height: 50px;
-  padding: 10px 20px 18px;
+  padding: 12px 10px 2px;
   max-width: 1000px;
 
   top: 90%;
@@ -28,11 +28,11 @@ canvas {
   @media (min-width: 519px) {
     line-height: 70px;
     font-size: 30px;
-    padding: 10px 40px 28px;
+    padding: 20px 20px 5px;
   }
   @media (min-width: 959px) {
     line-height: 110px;
     font-size: 50px;
-    padding: 10px 40px 28px;
+    
   }
 }
