@@ -56,6 +56,11 @@
   dependencies:
     gsap "*"
 
+"@types/ityped@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@types/ityped/-/ityped-1.0.1.tgz#0599e2ed8f46c631abe31decd6d70e865afa003a"
+  integrity sha512-7K9uPwFcvYeqvA7IBCSC4YE1nkkubyyx2IhFnZp4P62OCX2zg07qMn04QVdbhGwfiIzJx+UFFLsjunRdim1/Tw==
+
 "@types/json-schema@*", "@types/json-schema@^7.0.7":
   version "7.0.8"
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.8.tgz#edf1bf1dbf4e04413ca8e5b17b3b7d7d54b59818"
@@ -714,6 +719,11 @@ isobject@^3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/isobject/-/isobject-3.0.1.tgz#4e431e92b11a9731636aa1f9c8d1ccbcfdab78df"
   integrity sha1-TkMekrEalzFjaqH5yNHMvP2reN8=
+
+ityped@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/ityped/-/ityped-1.0.3.tgz#78430ab45e4836f4e565ecbacd221e58d46b44b3"
+  integrity sha512-46Qnh3qs+6EJlWDHmvWRW6qiz5jFy2mkh9UvtTvQmLJMZIjKrdz4du68le7hLX4tAWCp6QTKiq/OuLv6huHxZg==
 
 jest-worker@^27.0.2:
   version "27.0.6"
