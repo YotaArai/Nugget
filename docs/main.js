@@ -21,7 +21,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "canvas {\n  position: absolute;\n}", "",{"version":3,"sources":["webpack://./src/index.scss"],"names":[],"mappings":"AAAA;EACE,kBAAA;AACF","sourcesContent":["canvas {\n  position: absolute;\n}\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "@font-face {\n  font-family: \"pokemon-font\";\n  src: url(\"pokemon-font.woff2\");\n}\ncanvas {\n  position: absolute;\n}\n\n.nugget-text {\n  color: #f0f0f0;\n  font-family: \"pokemon-font\", monospace;\n  border: 2mm double;\n  border-radius: 6px;\n  position: fixed;\n  z-index: 1000;\n  font-size: 18px;\n  line-height: 50px;\n  padding: 10px 20px 18px;\n  max-width: 1000px;\n  top: 90%;\n  left: 50%;\n  transform: translateY(-90%) translateX(-50%);\n  width: 80%;\n}\n@media (min-width: 519px) {\n  .nugget-text {\n    line-height: 70px;\n    font-size: 30px;\n    padding: 10px 40px 28px;\n  }\n}\n@media (min-width: 959px) {\n  .nugget-text {\n    line-height: 110px;\n    font-size: 50px;\n    padding: 10px 40px 28px;\n  }\n}", "",{"version":3,"sources":["webpack://./src/index.scss"],"names":[],"mappings":"AAAA;EACE,2BAAA;EACA,8BAAA;AACF;AAEA;EACE,kBAAA;AAAF;;AAGA;EACE,cAAA;EACA,sCAAA;EACA,kBAAA;EACA,kBAAA;EACA,eAAA;EACA,aAAA;EAEA,eAAA;EACA,iBAAA;EACA,uBAAA;EACA,iBAAA;EAEA,QAAA;EACA,SAAA;EACA,4CAAA;EACA,UAAA;AAFF;AAIE;EAlBF;IAmBI,iBAAA;IACA,eAAA;IACA,uBAAA;EADF;AACF;AAEE;EAvBF;IAwBI,kBAAA;IACA,eAAA;IACA,uBAAA;EACF;AACF","sourcesContent":["@font-face {\n  font-family: 'pokemon-font';\n  src: url('pokemon-font.woff2');\n}\n\ncanvas {\n  position: absolute;\n}\n\n.nugget-text{\n  color: #f0f0f0;\n  font-family: \"pokemon-font\", monospace;\n  border: 2mm double;\n  border-radius: 6px;\n  position: fixed;\n  z-index: 1000;\n\n  font-size: 18px;\n  line-height: 50px;\n  padding: 10px 20px 18px;\n  max-width: 1000px;\n\n  top: 90%;\n  left: 50%;\n  transform: translateY(-90%) translateX(-50%);\n  width: 80%;\n\n  @media (min-width: 519px) {\n    line-height: 70px;\n    font-size: 30px;\n    padding: 10px 40px 28px;\n  }\n  @media (min-width: 959px) {\n    line-height: 110px;\n    font-size: 50px;\n    padding: 10px 40px 28px;\n  }\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -50467,7 +50467,7 @@ __webpack_require__.r(__webpack_exports__);
 class App {
     constructor() {
         this.scene = new three__WEBPACK_IMPORTED_MODULE_0__.Scene();
-        this.renderer = new three__WEBPACK_IMPORTED_MODULE_0__.WebGLRenderer();
+        this.renderer = new three__WEBPACK_IMPORTED_MODULE_0__.WebGLRenderer({ antialias: true, alpha: true });
         this.camera = new three__WEBPACK_IMPORTED_MODULE_0__.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 1);
         this.createScene();
         this.createCamera();
@@ -50484,7 +50484,7 @@ class App {
         document.body.appendChild(this.renderer.domElement);
     }
     createCamera() {
-        this.camera.position.set(0, 0, 1000);
+        this.camera.position.set(0, -100, 1000);
         this.scene.add(this.camera);
     }
     addDirectionalLight(color, position) {
@@ -50493,8 +50493,8 @@ class App {
         this.scene.add(light);
     }
     createSphere() {
-        const geometry = new three__WEBPACK_IMPORTED_MODULE_0__.SphereGeometry(250, 32, 32);
-        const material = new three__WEBPACK_IMPORTED_MODULE_0__.MeshLambertMaterial({ color: 0xe6b422 });
+        const geometry = new three__WEBPACK_IMPORTED_MODULE_0__.SphereGeometry(300, 64, 64);
+        const material = new three__WEBPACK_IMPORTED_MODULE_0__.MeshPhongMaterial({ color: 0xe6b422 });
         const sphere = new three__WEBPACK_IMPORTED_MODULE_0__.Mesh(geometry, material);
         this.scene.add(sphere);
     }

@@ -943,6 +943,11 @@ pkg-dir@^4.2.0:
   dependencies:
     find-up "^4.0.0"
 
+pokemon-font@^1.8.1:
+  version "1.8.1"
+  resolved "https://registry.yarnpkg.com/pokemon-font/-/pokemon-font-1.8.1.tgz#55cad862590fce41b5dbb4f080693f9444bea097"
+  integrity sha512-INOiw38rYaIig9ehTow6RZ2FbXNtm+5B/BpNUIwkctkGfZxjx86QqPPGwAmvrCoze9lohkML0hP7u6qu1gi1rQ==
+
 postcss-loader@^6.1.1:
   version "6.1.1"
   resolved "https://registry.yarnpkg.com/postcss-loader/-/postcss-loader-6.1.1.tgz#58dd0a3accd9bc87cc52eff75244db578d11301a"

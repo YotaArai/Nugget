@@ -7,7 +7,7 @@ export default class App{
   
   constructor() {
     this.scene = new THREE.Scene();
-    this.renderer = new THREE.WebGLRenderer();
+    this.renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
     this.camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 1);
 
     this.createScene();
@@ -29,7 +29,7 @@ export default class App{
   }
 
   createCamera() {
-    this.camera.position.set(0, 0, 1000);
+    this.camera.position.set(0, -100, 1000);
     this.scene.add(this.camera);
   }
 
@@ -40,8 +40,8 @@ export default class App{
   }
 
   createSphere(){
-    const geometry = new THREE.SphereGeometry(250, 32, 32);
-    const material = new THREE.MeshLambertMaterial( {color: 0xe6b422} );
+    const geometry = new THREE.SphereGeometry(300, 64, 64);
+    const material = new THREE.MeshPhongMaterial( {color: 0xe6b422} );
     const sphere = new THREE.Mesh(geometry, material);
     this.scene.add(sphere);
   }
