@@ -19,6 +19,7 @@ canvas {
   line-height: 50px;
   padding: 12px 10px 2px;
   max-width: 1000px;
+  height: calc(50px * 2);
 
   top: 90%;
   left: 50%;
@@ -29,10 +30,11 @@ canvas {
     line-height: 70px;
     font-size: 30px;
     padding: 20px 20px 5px;
+    height: calc(70px * 2);
   }
   @media (min-width: 959px) {
     line-height: 110px;
     font-size: 50px;
-    
+    height: calc(110px * 2);
   }
 }
