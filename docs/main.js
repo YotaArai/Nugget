@@ -50484,7 +50484,7 @@ class App {
         document.body.appendChild(this.renderer.domElement);
     }
     createCamera() {
-        this.camera.position.set(0, -100, 1000);
+        this.camera.position.set(0, -120, 1000);
         this.scene.add(this.camera);
     }
     addDirectionalLight(color, position) {
@@ -50493,7 +50493,7 @@ class App {
         this.scene.add(light);
     }
     createSphere() {
-        const geometry = new three__WEBPACK_IMPORTED_MODULE_0__.SphereGeometry(300, 64, 64);
+        const geometry = new three__WEBPACK_IMPORTED_MODULE_0__.SphereGeometry(250, 64, 64);
         const material = new three__WEBPACK_IMPORTED_MODULE_0__.MeshPhongMaterial({ color: 0xe6b422 });
         const sphere = new three__WEBPACK_IMPORTED_MODULE_0__.Mesh(geometry, material);
         this.scene.add(sphere);

@@ -29,7 +29,7 @@ export default class App{
   }
 
   createCamera() {
-    this.camera.position.set(0, -100, 1000);
+    this.camera.position.set(0, -120, 1000);
     this.scene.add(this.camera);
   }
 
@@ -40,7 +40,7 @@ export default class App{
   }
 
   createSphere(){
-    const geometry = new THREE.SphereGeometry(300, 64, 64);
+    const geometry = new THREE.SphereGeometry(250, 64, 64);
     const material = new THREE.MeshPhongMaterial( {color: 0xe6b422} );
     const sphere = new THREE.Mesh(geometry, material);
     this.scene.add(sphere);
