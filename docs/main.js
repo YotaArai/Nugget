@@ -50471,7 +50471,11 @@ class App {
         this.camera = new three__WEBPACK_IMPORTED_MODULE_0__.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 1);
         this.createScene();
         this.createCamera();
-        this.addDirectionalLight(0xffffff, { x: -400, y: 400, z: 1000 });
+        this.addDirectionalLight(0xffffff, { x: 300, y: 100, z: 1000 });
+        this.addSpotLight(0xffffff, 0.2, { x: 100, y: 1000, z: 2000 });
+        this.addSpotLight(0xffffff, 0.2, { x: -100, y: 1000, z: 2000 });
+        this.addSpotLight(0xffffff, 0.2, { x: 100, y: 1000, z: 4000 });
+        this.addSpotLight(0xffffff, 0.2, { x: -100, y: 1000, z: 4000 });
         this.createSphere();
         this.animate();
         window.addEventListener('resize', this.onResize.bind(this));
@@ -50492,9 +50496,14 @@ class App {
         light.position.set(position.x, position.y, position.z);
         this.scene.add(light);
     }
+    addSpotLight(color, intensity, position) {
+        const light = new three__WEBPACK_IMPORTED_MODULE_0__.SpotLight(color, intensity);
+        light.position.set(position.x, position.y, position.z);
+        this.scene.add(light);
+    }
     createSphere() {
         const geometry = new three__WEBPACK_IMPORTED_MODULE_0__.SphereGeometry(250, 64, 64);
-        const material = new three__WEBPACK_IMPORTED_MODULE_0__.MeshPhongMaterial({ color: 0xe6b422 });
+        const material = new three__WEBPACK_IMPORTED_MODULE_0__.MeshPhongMaterial({ color: 0xD09a32 });
         const sphere = new three__WEBPACK_IMPORTED_MODULE_0__.Mesh(geometry, material);
         this.scene.add(sphere);
     }

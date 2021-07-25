@@ -12,7 +12,11 @@ export default class App{
 
     this.createScene();
     this.createCamera();
-    this.addDirectionalLight(0xffffff, { x: -400, y: 400, z: 1000 });
+    this.addDirectionalLight(0xffffff, { x: 300, y: 100, z: 1000 });
+    this.addSpotLight(0xffffff, 0.2, { x: 100, y: 1000, z: 2000 });
+    this.addSpotLight(0xffffff, 0.2, { x: -100, y: 1000, z: 2000 });
+    this.addSpotLight(0xffffff, 0.2, { x: 100, y: 1000, z: 4000 });
+    this.addSpotLight(0xffffff, 0.2, { x: -100, y: 1000, z: 4000 });
     this.createSphere();
     this.animate();
     window.addEventListener('resize', this.onResize.bind(this));
@@ -39,9 +43,15 @@ export default class App{
     this.scene.add(light);
   }
 
+  addSpotLight(color: number, intensity: number,  position: { x: number, y: number, z: number }){
+    const light = new THREE.SpotLight(color, intensity);
+    light.position.set(position.x, position.y, position.z);
+    this.scene.add(light);
+  }
+
   createSphere(){
     const geometry = new THREE.SphereGeometry(250, 64, 64);
-    const material = new THREE.MeshPhongMaterial( {color: 0xe6b422} );
+    const material = new THREE.MeshPhongMaterial( {color: 0xD09a32} );
     const sphere = new THREE.Mesh(geometry, material);
     this.scene.add(sphere);
   }
