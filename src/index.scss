@@ -18,7 +18,7 @@ canvas {
 
   font-size: 14px;
   line-height: 50px;
-  padding: 4px 10px 0px;
+  padding: 8px 10px 0px;
   max-width: 1000px;
   height: calc(50px * 2);
 
@@ -31,7 +31,7 @@ canvas {
   @media (min-width: 519px) {
     line-height: 70px;
     font-size: 30px;
-    padding: 10px 16px 4px;
+    padding: 18px 20px 0px;
     height: calc(70px * 2);
   }
   @media (min-width: 959px) {
