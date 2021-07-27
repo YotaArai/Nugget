@@ -33,7 +33,7 @@ export default class App{
   }
 
   createCamera() {
-    this.camera.position.set(0, -120, 1000);
+    this.camera.position.set(0, -130, 1000);
     this.scene.add(this.camera);
   }
 
