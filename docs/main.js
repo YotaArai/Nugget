@@ -21,7 +21,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "@font-face {\n  font-family: \"pokemon-font\";\n  src: url(\"pokemon-font.woff2\");\n}\ncanvas {\n  position: absolute;\n}\n\n.nugget-text {\n  color: #f0f0f0;\n  font-family: \"pokemon-font\", monospace;\n  border: 2mm double;\n  border-radius: 6px;\n  position: fixed;\n  z-index: 1000;\n  font-size: 18px;\n  line-height: 50px;\n  padding: 12px 10px 2px;\n  max-width: 1000px;\n  height: calc(50px * 2);\n  top: 90%;\n  left: 50%;\n  transform: translateY(-90%) translateX(-50%);\n  width: 80%;\n}\n@media (min-width: 519px) {\n  .nugget-text {\n    line-height: 70px;\n    font-size: 30px;\n    padding: 20px 20px 5px;\n    height: calc(70px * 2);\n  }\n}\n@media (min-width: 959px) {\n  .nugget-text {\n    line-height: 110px;\n    font-size: 50px;\n    height: calc(110px * 2);\n  }\n}", "",{"version":3,"sources":["webpack://./src/index.scss"],"names":[],"mappings":"AAAA;EACE,2BAAA;EACA,8BAAA;AACF;AAEA;EACE,kBAAA;AAAF;;AAGA;EACE,cAAA;EACA,sCAAA;EACA,kBAAA;EACA,kBAAA;EACA,eAAA;EACA,aAAA;EAEA,eAAA;EACA,iBAAA;EACA,sBAAA;EACA,iBAAA;EACA,sBAAA;EAEA,QAAA;EACA,SAAA;EACA,4CAAA;EACA,UAAA;AAFF;AAIE;EAnBF;IAoBI,iBAAA;IACA,eAAA;IACA,sBAAA;IACA,sBAAA;EADF;AACF;AAEE;EAzBF;IA0BI,kBAAA;IACA,eAAA;IACA,uBAAA;EACF;AACF","sourcesContent":["@font-face {\n  font-family: 'pokemon-font';\n  src: url('pokemon-font.woff2');\n}\n\ncanvas {\n  position: absolute;\n}\n\n.nugget-text{\n  color: #f0f0f0;\n  font-family: \"pokemon-font\", monospace;\n  border: 2mm double;\n  border-radius: 6px;\n  position: fixed;\n  z-index: 1000;\n\n  font-size: 18px;\n  line-height: 50px;\n  padding: 12px 10px 2px;\n  max-width: 1000px;\n  height: calc(50px * 2);\n\n  top: 90%;\n  left: 50%;\n  transform: translateY(-90%) translateX(-50%);\n  width: 80%;\n\n  @media (min-width: 519px) {\n    line-height: 70px;\n    font-size: 30px;\n    padding: 20px 20px 5px;\n    height: calc(70px * 2);\n  }\n  @media (min-width: 959px) {\n    line-height: 110px;\n    font-size: 50px;\n    height: calc(110px * 2);\n  }\n}\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "@font-face {\n  font-family: \"pokemon-font\";\n  src: url(\"pokemon-font.woff2\");\n}\ncanvas {\n  position: absolute;\n}\n\n.nugget-text {\n  color: #f0f0f0;\n  font-family: \"pokemon-font\", monospace;\n  border: 2mm double;\n  border-radius: 6px;\n  position: fixed;\n  z-index: 1000;\n  font-size: 14px;\n  line-height: 50px;\n  padding: 4px 10px 0px;\n  max-width: 1000px;\n  height: calc(50px * 2);\n  top: 90%;\n  left: 50%;\n  transform: translateY(-90%) translateX(-50%);\n  width: 80%;\n  overflow: hidden;\n}\n@media (min-width: 519px) {\n  .nugget-text {\n    line-height: 70px;\n    font-size: 30px;\n    padding: 10px 16px 4px;\n    height: calc(70px * 2);\n  }\n}\n@media (min-width: 959px) {\n  .nugget-text {\n    line-height: 110px;\n    font-size: 46px;\n    height: calc(110px * 2);\n  }\n}\n\n#typing-animation {\n  position: relative;\n  -webkit-animation-duration: 0.03s;\n          animation-duration: 0.03s;\n  -webkit-animation-timing-function: linear;\n          animation-timing-function: linear;\n  -webkit-animation-iteration-count: 1;\n          animation-iteration-count: 1;\n  -webkit-animation-fill-mode: forwards;\n          animation-fill-mode: forwards;\n}\n\n@-webkit-keyframes moveUp {\n  to {\n    transform: translateY(-50px);\n  }\n}\n\n@keyframes moveUp {\n  to {\n    transform: translateY(-50px);\n  }\n}\n@-webkit-keyframes moveUpTablet {\n  to {\n    transform: translateY(-70px);\n  }\n}\n@keyframes moveUpTablet {\n  to {\n    transform: translateY(-70px);\n  }\n}\n@-webkit-keyframes moveUpPc {\n  to {\n    transform: translateY(-110px);\n  }\n}\n@keyframes moveUpPc {\n  to {\n    transform: translateY(-110px);\n  }\n}", "",{"version":3,"sources":["webpack://./src/index.scss"],"names":[],"mappings":"AAAA;EACE,2BAAA;EACA,8BAAA;AACF;AAEA;EACE,kBAAA;AAAF;;AAGA;EACE,cAAA;EACA,sCAAA;EACA,kBAAA;EACA,kBAAA;EACA,eAAA;EACA,aAAA;EAEA,eAAA;EACA,iBAAA;EACA,qBAAA;EACA,iBAAA;EACA,sBAAA;EAEA,QAAA;EACA,SAAA;EACA,4CAAA;EACA,UAAA;EACA,gBAAA;AAFF;AAIE;EApBF;IAqBI,iBAAA;IACA,eAAA;IACA,sBAAA;IACA,sBAAA;EADF;AACF;AAEE;EA1BF;IA2BI,kBAAA;IACA,eAAA;IACA,uBAAA;EACF;AACF;;AAEA;EACE,kBAAA;EACA,iCAAA;UAAA,yBAAA;EACA,yCAAA;UAAA,iCAAA;EACD,oCAAA;UAAA,4BAAA;EACA,qCAAA;UAAA,6BAAA;AACD;;AACA;EACE;IACE,4BAAA;EAEF;AACF;;AALA;EACE;IACE,4BAAA;EAEF;AACF;AAAA;EACE;IACE,4BAAA;EAEF;AACF;AALA;EACE;IACE,4BAAA;EAEF;AACF;AAAA;EACE;IACE,6BAAA;EAEF;AACF;AALA;EACE;IACE,6BAAA;EAEF;AACF","sourcesContent":["@font-face {\n  font-family: 'pokemon-font';\n  src: url('pokemon-font.woff2');\n}\n\ncanvas {\n  position: absolute;\n}\n\n.nugget-text{\n  color: #f0f0f0;\n  font-family: \"pokemon-font\", monospace;\n  border: 2mm double;\n  border-radius: 6px;\n  position: fixed;\n  z-index: 1000;\n\n  font-size: 14px;\n  line-height: 50px;\n  padding: 4px 10px 0px;\n  max-width: 1000px;\n  height: calc(50px * 2);\n\n  top: 90%;\n  left: 50%;\n  transform: translateY(-90%) translateX(-50%);\n  width: 80%;\n  overflow: hidden;\n\n  @media (min-width: 519px) {\n    line-height: 70px;\n    font-size: 30px;\n    padding: 10px 16px 4px;\n    height: calc(70px * 2);\n  }\n  @media (min-width: 959px) {\n    line-height: 110px;\n    font-size: 46px;\n    height: calc(110px * 2);\n  }\n}\n\n#typing-animation{\n  position: relative;\n  animation-duration: 0.03s;\n  animation-timing-function: linear;\n\tanimation-iteration-count: 1;\n\tanimation-fill-mode: forwards;\n}\n@keyframes moveUp {\n  to {\n    transform:translateY(-50px);\n  }\n}\n@keyframes moveUpTablet {\n  to {\n    transform:translateY(-70px);\n  }\n}\n@keyframes moveUpPc {\n  to {\n    transform:translateY(-110px);\n  }\n}\n\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -50536,29 +50536,80 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 class Text {
     constructor() {
-        this.text = "これは おじさんの きんのたま!\nゆうこうに かつようして くれ!";
+        this.texts = [
+            "これは おじさんの きんのたま!\nゆうこうに かつようして くれ!",
+            "おじさんの きんのたま だからね!",
+        ];
         this.element = document.getElementById("typing-animation");
+        this.style = window.getComputedStyle(this.element);
+        this.lineHeight = this.style.getPropertyValue('line-height');
         this.intervalId = 0;
-        this.onLoad();
+        this.textIndex = 0;
+        this.waitFlg = false;
+        this.displayChars = new Array();
+        this.charPosition = 0;
+        this.currentText = "";
+        this.displayText(this.textIndex);
+        this.y = 0;
         window.addEventListener("click", this.onClick.bind(this));
+        window.addEventListener('animationend', this.endAnimation.bind(this));
     }
-    onLoad() {
-        let currentText = "";
-        const chars = Array.from(this.text);
-        let position = 0;
+    displayText(index) {
+        this.displayChars = this.displayChars.concat(Array.from(this.texts[index]));
         this.intervalId = window.setInterval(() => {
-            if (chars[position] == undefined) {
-                window.clearInterval(this.intervalId);
+            if (this.displayChars[this.charPosition] == undefined) {
+                this.finishDisplayText();
                 return;
             }
-            currentText += chars[position];
-            this.element.innerText = currentText;
-            position++;
+            this.currentText += this.displayChars[this.charPosition];
+            this.element.innerText = this.currentText;
+            this.charPosition++;
         }, 70);
     }
     onClick() {
-        this.element.innerText = this.text;
+        if (this.waitFlg) {
+            this.textIndex++;
+            if (this.textIndex >= this.texts.length) {
+                return;
+            }
+            this.element.style.animationName = this.getAnimationType();
+            this.displayChars.push('\n');
+            this.displayText(this.textIndex);
+        }
+        else {
+            this.currentText = this.texts[this.textIndex];
+            this.element.innerText = this.currentText;
+            this.charPosition = this.displayChars.length;
+            this.finishDisplayText();
+        }
+    }
+    finishDisplayText() {
         window.clearInterval(this.intervalId);
+        this.waitFlg = true;
+    }
+    endAnimation() {
+        const cssStyle = window.getComputedStyle(this.element);
+        const res = cssStyle.transform.match(/\((.*)\)/);
+        if (!res) {
+            return;
+        }
+        const arr = res[1].split(",");
+        this.y += parseInt(arr[5]);
+        this.element.style.transform = '';
+        this.element.style.top = this.y + 'px';
+        this.element.style.animationName = '';
+    }
+    getAnimationType() {
+        let width = window.innerWidth;
+        if (width > 959) {
+            return 'moveUpPc';
+        }
+        else if (width > 519) {
+            return 'moveUpTablet';
+        }
+        else {
+            return 'moveUp';
+        }
     }
 }
 
