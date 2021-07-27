@@ -50564,28 +50564,30 @@ class Text {
             this.currentText += this.displayChars[this.charPosition];
             this.element.innerText = this.currentText;
             this.charPosition++;
-        }, 70);
+        }, 60);
     }
     onClick() {
-        if (this.waitFlg) {
-            this.textIndex++;
-            if (this.textIndex >= this.texts.length) {
-                return;
-            }
-            this.element.style.animationName = this.getAnimationType();
-            this.displayChars.push('\n');
-            this.displayText(this.textIndex);
+        if (!this.waitFlg) {
+            return;
         }
-        else {
-            this.currentText = this.texts[this.textIndex];
-            this.element.innerText = this.currentText;
-            this.charPosition = this.displayChars.length;
-            this.finishDisplayText();
+        this.textIndex++;
+        document.getElementsByTagName('body')[0].style.cursor = 'auto';
+        if (this.textIndex >= this.texts.length) {
+            return;
         }
+        this.element.style.animationName = this.getAnimationType();
+        this.displayChars.push('\n');
+        this.waitFlg = false;
+        this.displayText(this.textIndex);
     }
     finishDisplayText() {
         window.clearInterval(this.intervalId);
         this.waitFlg = true;
+        let cursor = 'pointer';
+        if (this.textIndex >= this.texts.length - 1) {
+            cursor = 'auto';
+        }
+        document.getElementsByTagName('body')[0].style.cursor = cursor;
     }
     endAnimation() {
         const cssStyle = window.getComputedStyle(this.element);
